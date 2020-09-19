@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +9,44 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/sales.css" />
 </head>
-<body>
-    <br>
-    <table id="sales-table"></table>
-    <p>
-        <button  class="But" ><a id="text" href="index.html">go home</a></button>
 
-        <a href=""></a>
-    </p>
-   <footer></footer>
-   <script src="js/app.js"></script> 
+<body>
+    <header>
+        <p>
+            <button class="But"><a id="text" href="index.html">go home</a></button>
+
+        </p>
+    </header>
+    <main>
+        <h1>Add More Locations</h1>
+        <br>
+        <form id="fm">
+            <fieldset>
+                <legend>Location details</legend>
+                <label for="name">location</label>
+                <input type="text" id="NAm" required>
+
+                <label for="number">Minemum</label>
+                <input type="number" id="minV" placeholder="min num customer per hour" required>
+
+                <label for="number">Maxemum</label>
+                <input type="number" id="maxV" placeholder="max num customer per hour" required>
+
+                <label for="number">average</label>
+                <input type="number" id="avgV" placeholder="average num cookies per customer" step=0.01 required>
+                <label for="confirm">Confirm</label>
+                <input type="checkbox" id="conf">
+                <input type="submit" id="sub">
+            </fieldset>
+        </form>
+        <br>
+        <table id="sales-table"></table>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/app.js"></script>
 </body>
+
 </html>
