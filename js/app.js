@@ -3,6 +3,7 @@
 var operHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 var tableElement = document.getElementById('sales-table');
 var sellingAreas = [];
+var form= document.getElementById('fm');
 
 function CookieStore(
     locName,
@@ -89,12 +90,15 @@ function createFooterRow(){
     tdEl = document.createElement('td');
     trEl.appendChild(tdEl);
     tdEl.textContent = hourlyTotal;
+    
 
    }
    tdEl = document.createElement('td');
    trEl.appendChild(tdEl);
    tdEl.textContent=totalOfTotal();
 }
+
+
 function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
@@ -128,3 +132,31 @@ function renderTable(){
 
 renderTable();
 
+
+form.addEventListener('submit',function(event){
+    event.preventDefault();
+    console.log(event);
+    console.log(event.target);
+    var location = event.target.NAm.value;
+    console.log(location);
+    var Min = event.target.minV.value;
+    console.log(Min);
+    var Max = event.target.maxV.value;
+    console.log(Max);
+    var Avg = event.target.avgV.value;
+    console.log(Avg);
+    var confirm = event.target.conf.checked;
+    console.log(confirm);
+ tableElement.removeChild(tableElement.lastChild);
+
+   var newCookie = new CookieStore(location,Min  ,Max ,Avg );
+
+   newCookie.render();
+   createFooterRow();
+   
+   
+   form.reset();
+   
+   
+
+});
