@@ -1,0 +1,107 @@
+*{
+    font-family: 'Grandstander', cursive;
+}
+
+header{
+    width: 100%;
+    background-color: rgba(0,0,0,.2);
+    
+
+}
+header ul{
+    text-align: center;
+    
+}
+header ul li{
+    list-style: none;
+    display: inline-block;
+    
+}
+header ul li a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Raleway' , sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 25px;
+    transition: all ease 0.5s;
+
+}
+header ul li a:hover{
+    background-color: #211b4385;
+}
+
+
+
+
+ul{
+    font-size: xx-large;
+    color: rgb(14, 9, 2);
+    margin: 0px 80px 0px 0px;
+    text-align: center;
+    text-indent: 50px;
+    letter-spacing: 3px;
+    font-weight: bold ;
+    
+}
+#cover{
+    margin-top: 1px;
+    background-image: url(https://github.com/LTUC/amman-201d10/blob/master/class-08/lab-b/assets/family.jpg?raw=true);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    
+
+}
+
+
+
+h3{
+    
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: x-large;
+}
+#loc{
+    text-align: center;
+    margin-top: 50px;
+    background-color: rgba(151, 160, 23, 0.1);
+    margin-left: 200px;
+    margin-right: 200px;
+    
+}
+div p {
+    margin-top: 30px;
+
+}
+#OH{
+    text-align: center;
+    margin-top: 50px;
+    background-color: rgba(247, 10, 120, 0.2);
+    width: 50%;
+    height: 100px;
+    
+}
+#co{
+    text-align: center;
+    margin-top: 50px;
+    background-color:  rgba(247, 10, 120, 0.2);
+    margin-bottom: 20px;
+    margin-left: 200px;
+}
+    
+#Ga{
+    text-align: center;
+    margin-top: 50px;
+    background-color: rgba(151, 160, 23, 0.1);
+    
+
+}
